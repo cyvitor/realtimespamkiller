@@ -14,3 +14,8 @@ Este script é destinado ao uso no Proxmox Mail Gateway. Aqui está o início do
 KEY="sua_chave_aqui"
 LOG="/var/log/RTSK_cli.log"
 ##### CONFIGURAÇÃO
+```
+Para utilizar corretamente o script, siga as etapas abaixo:
+
+Acesse o site realtimespamkiller.vh5.tech e realize o cadastro.
+Após o cadastro, gere a sua chave e substitua a variável KEY na linha 3 do script RTSK_cli_mox.sh pela sua chave gerada.
