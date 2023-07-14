@@ -48,7 +48,7 @@ else
             domain_name=$(_jq '.domain_name')
             domain_express=$(_jq '.domain_express')
             registrar_log "Adiciona na blacklist: $domain_name $domain_express"
-			$ZMPROV md "$DOMINIO" +amavisblacklistsender "$linha"
+			$ZMPROV md "$DOMINIO" +amavisblacklistsender "$domain_name"
         done
     fi
 fi
