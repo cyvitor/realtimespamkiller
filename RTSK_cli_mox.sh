@@ -46,7 +46,7 @@ else
             domain_name=$(_jq '.domain_name')
             domain_express=$(_jq '.domain_express')
             registrar_log "Adiciona na blacklist: $domain_name $domain_express"
-			pmgsh create /config/ruledb/who/2/regex -regex "$EXPRESS_REGULAR"
+			pmgsh create /config/ruledb/who/2/regex -regex "$domain_express"
         done
     fi
 fi
